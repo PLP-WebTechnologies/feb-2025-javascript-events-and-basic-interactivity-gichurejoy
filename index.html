@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Layouts and Responsive Design</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1 id="mainTitle">Welcome to Interactive Web Playground</h1>
+    <button id="colorBtn">Change Title Color</button>
+  </header>
+
+  <main>
+    <section>
+      <h2>Ordered List</h2>
+      <ol type="I">
+        <li>What</li>
+        <li>This</li>
+        <li>Is</li>
+        <li id="listItem">Great</li>
+      </ol>
+      <button id="changeTextBtn">Change List Item Text</button>
+    </section>
+
+    <section>
+      <h2>Pexel</h2>
+      <img
+        id="mainImage"
+        src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg"
+        alt="Pexels Image"
+        width="500"
+      />
+      <button id="imageToggleBtn">Toggle Image</button>
+    </section>
+
+    <section>
+      <h2>Contacts Table</h2>
+      <table border="1" cellpadding="10">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Joy</td>
+            <td>Nairobi</td>
+            <td>0798717800</td>
+            <td>joy.gichure@outlook.com</td>
+          </tr>
+          <tr>
+            <td>Wanjiru</td>
+            <td>Nairobi</td>
+            <td>0798717800</td>
+            <td>joy.gichure@outlook.com</td>
+          </tr>
+          <tr>
+            <td>Gichure</td>
+            <td>Nairobi</td>
+            <td>0798717800</td>
+            <td>joy.gichure@outlook.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Registration Form</h2>
+      <form id="registrationForm" action="#" method="post">
+        <label for="name">Full Name:</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
+
+        <label for="email">Email Address:</label><br />
+        <input type="email" id="email" name="email" required /><br />
+        <small id="emailFeedback"></small><br />
+
+        <label for="password">Password:</label><br />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+          minlength="6"
+        /><br />
+        <small id="passwordFeedback"></small><br />
+
+        <label for="dob">Date of Birth:</label><br />
+        <input type="date" id="dob" name="dob" required /><br /><br />
+
+        <label for="country">Select Country:</label><br />
+        <select id="country" name="country" required>
+          <option value="">--Choose a country--</option>
+          <option value="us">United States</option>
+          <option value="uk">United Kingdom</option>
+          <option value="ca">Canada</option>
+          <option value="au">Australia</option>
+        </select><br /><br />
+
+        <label>Gender:</label><br />
+        <input type="radio" id="male" name="gender" value="male" required />
+        <label for="male">Male</label><br />
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label><br />
+
+        <label>Hobbies:</label><br />
+        <input type="checkbox" id="sports" name="hobbies" value="sports" />
+        <label for="sports">Sports</label><br />
+        <input type="checkbox" id="music" name="hobbies" value="music" />
+        <label for="music">Music</label><br />
+        <input type="checkbox" id="travel" name="hobbies" value="travel" />
+        <label for="travel">Travel</label><br /><br />
+
+        <input type="submit" value="Register" />
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
